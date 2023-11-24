@@ -30,8 +30,6 @@
             <h3>Your Tasks:</h3>
             <ol>
                 <li v-for="(todo, i) in todos" :key="i">{{ todo.text }}</li>
-                <li>test00</li>
-                <li>test</li>
             </ol>
         </div>
     </div>

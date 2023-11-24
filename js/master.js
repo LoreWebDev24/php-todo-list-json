@@ -11,7 +11,7 @@ createApp({
 	methods: {
 		fetchData() {
 			axios.get('server.php').then((res) => {
-				console.log(res.data.results)
+				// console.log(res.data.results)
 				this.todos = res.data.results
 			})
 		},
