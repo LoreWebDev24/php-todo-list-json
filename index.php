@@ -21,7 +21,7 @@
             <h1>TO DO LIST</h1>
         </div>
         <div class="container">
-            <form action="">
+            <form action="" method="POST">
                 <input type="text" placeholder="Add a Task" v-model="newTodo">
                 <button type="submit">Add</button>
             </form>
@@ -29,7 +29,7 @@
         <div class="container">
             <h3>Your Tasks:</h3>
             <ol>
-                <li v-for="(todo, i) in todos" :key="i">{{ todo }}</li>
+                <li v-for="(todo, i) in todos" :key="i">{{ todo.text }}</li>
                 <li>test00</li>
                 <li>test</li>
             </ol>
