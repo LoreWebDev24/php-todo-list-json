@@ -30,15 +30,16 @@ createApp({
 				this.newTodo = ""
 			})
 		},
-		removeTask() {
+		removeTask(i) {
 			const data = {
-				id: index
+				id: i
 			}
 			axios.post('./removeTask.php',data, {
 				headers:{
 					'Content-Type': 'multipart/form-data',
 				},
 			})
+			// console.log(i)
 		}
 		
 	},

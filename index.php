@@ -34,7 +34,7 @@
                 <div class="tasks-wrapper">
                     <h3>Your Tasks:</h3>
                     <ol>
-                        <li v-for="(todo, i) in todos" :key="i">{{ todo.text }} <span><i class="remove-icon fa-solid fa-x"></i></span></li>
+                        <li v-for="(todo, i) in todos" :key="i">{{ todo.text }} <span class="task-remover" @click="removeTask(i)"><i class="remove-icon fa-solid fa-x"></i></span></li>
                     </ol>
                 </div>
             </div>
