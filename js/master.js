@@ -44,6 +44,22 @@ createApp({
 				this.todos = res.data.results
 			})
 			// console.log(i)
+		},
+		taskStatus(i) {
+			const data = {
+				status: this.todos[i].done,
+				id: i
+			}
+			console.log(data)
+			axios.post('./taskStatus.php',data, {
+				headers:{
+					'Content-Type': 'multipart/form-data',
+				},
+			})
+			.then((res) => {
+				// console.log(res.data)
+				this.todos = res.data.results
+			})
 		}
 		
 	},

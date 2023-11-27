@@ -1,7 +1,12 @@
+body {
+    background-color: rgb(36, 37, 38);
+}
+
 #app {
     max-width: 980px;
     margin: 0 auto;
     padding: 60px;
+    color: white;
 }
 
 h1 {
@@ -34,4 +39,8 @@ li {
 
 .remove-icon {
     color: rgb(255, 29, 29);
+}
+
+.done {
+    text-decoration: line-through;
 }

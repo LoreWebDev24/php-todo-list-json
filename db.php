@@ -19,5 +19,5 @@ $todos = [
     ]
 ];
 
-json_encode($todos);
+// json_encode($todos);
 // var_dump(json_encode($todos));
