@@ -4,6 +4,7 @@ $new_todo = $_POST['newTodo'] ?? '';
 
 $response = [
   'success' => true,
+  'results' => []
 ];
 
 if ($new_todo) {
@@ -17,11 +18,13 @@ if ($new_todo) {
     'done' => false
   ];
   
-  $response['todos'] = $todos;
+  $response['results'] = $todos;
 
   $todos_string = json_encode($todos);
 
   file_put_contents('./todos.json', $todos_string);
+
+  $new_todo = "";
 } else {
 
   $response['success'] = false;

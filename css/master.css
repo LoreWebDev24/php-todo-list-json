@@ -1,11 +1,37 @@
 #app {
     max-width: 980px;
     margin: 0 auto;
+    padding: 60px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+h3 {
+    padding-left: 2em;
 }
 
 li {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
 }
 
+.tasks-wrapper {
+    padding-top: 30px;
+}
+
+.remove-icon {
+    color: rgb(255, 29, 29);
+}
