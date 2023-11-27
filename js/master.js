@@ -15,6 +15,31 @@ createApp({
 				this.todos = res.data.results
 			})
 		},
+		newTask(){
+			const data = {
+				newTodo: this.newTodo,
+			}
+			axios.post('./store.php',data,{
+				headers:{
+					'Content-Type': 'multipart/form-data',
+				},
+			})
+			.then((res) => {
+				console.log(res.data)
+				this.todos = res.data.results
+			})
+		},
+		removeTask() {
+			const data = {
+				id: index
+			}
+			axios.post('./removeTask.php',data, {
+				headers:{
+					'Content-Type': 'multipart/form-data',
+				},
+			})
+		}
+		
 	},
 	created() {
 		this.fetchData()
