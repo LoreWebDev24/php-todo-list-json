@@ -39,6 +39,10 @@ createApp({
 					'Content-Type': 'multipart/form-data',
 				},
 			})
+			.then((res) => {
+				// console.log(res.data)
+				this.todos = res.data.results
+			})
 			// console.log(i)
 		}
 		

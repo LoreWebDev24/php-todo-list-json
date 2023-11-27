@@ -23,9 +23,7 @@
         <div id="app">
             <div class="container">
                 <h1>TO DO LIST</h1>
-            </div>
-            <!-- <div v-if=""class="alert"> -->
-            <!-- </div> -->
+            </div>  
             <div class="container form">
                 <input id="newTodo" type="text" placeholder="Add a Task" v-model="newTodo">
                 <button @click="newTask" type="submit">Add</button>
